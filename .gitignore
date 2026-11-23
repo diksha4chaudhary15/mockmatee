@@ -7,18 +7,56 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Runtime diagnostic data
+diagnostic.data
+
+# Node / Dependency directories
+node_modules/
+jspm_packages/
+
+# Environment Variables & Secrets
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+*.env
+
+# Local Server Data / History
+server/data/interviews.json
+**/server/data/interviews.json
+
+# Production build outputs
+dist/
+dist-ssr/
+build/
 *.local
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swo
+*~
+.directory
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Vite / bundler caches
+.vite/
+.cache/
+.parcel-cache/
+.eslintcache
